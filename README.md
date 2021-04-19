@@ -11,9 +11,9 @@ Dependencies related to this code is provided in requirements-cpu.txt and requir
 
 ## Pre-trained weights for YOLOv4
 
-Pre-trained weights for YOLOv4 can be downloaded from here. 
+Pre-trained weights for YOLOv4 can be downloaded from [here](https://drive.google.com/drive/folders/1FbIh9ZAb5eV53zGvzFXdAHyblrfxmj6-?usp=sharing). 
 
-Rename the weights file to custome.weights and copy and paste it into the "data" folder of this repository.
+Rename the weights file to custom.weights and copy and paste it into the "data" folder of this repository.
 
 Use the following commands to convert the darkflow weights to Tensorflow. The pre-trained weights were trained on honeybee and strawberry flower images. Please make sure "./data/classes/custom.name" file contains the correct names of the classes (i.e. honeybee and flower)
  
@@ -32,6 +32,9 @@ After declaring relevant parameters, navigate to the root folder of the reposito
 python PolyTrack.py 
 ```
 
+## Contact
+
+If there are any inquiries, please don't hesitate to contact me at Malika DOT Ratnayake AT monash DOT edu
  
 ## References
  
