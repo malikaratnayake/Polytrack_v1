@@ -13,7 +13,7 @@ Dependencies related to this code is provided in requirements-cpu.txt and requir
 
 Pre-trained weights for YOLOv4 can be downloaded from here. 
 
-Rename the weights file to custome.weights and copy and paste it into the "data" folder of this repository.
+Rename the weights file to custom.weights and copy and paste it into the "data" folder of this repository.
 
 Use the following commands to convert the darkflow weights to Tensorflow. The pre-trained weights were trained on honeybee and strawberry flower images. Please make sure "./data/classes/custom.name" file contains the correct names of the classes (i.e. honeybee and flower)
  
