@@ -12,11 +12,10 @@ pt_cfg                           = __PT
 __PT.POLYTRACK                 = edict()
 
 __PT.POLYTRACK.INPUT          = './data/video/video_24_2.mp4'
-#__PT.POLYTRACK.INPUT_DIR      = '/home/mrat0006/bm75/polytrack/data/SR/' 
-__PT.POLYTRACK.INPUT_DIR      = './data/cvpr2021/V1/'
+__PT.POLYTRACK.INPUT_DIR      = '/data/video/' 
 __PT.POLYTRACK.VIDEO_EXT      = '.mp4'
-__PT.POLYTRACK.CONTINUOUS_VIDEO = False
-__PT.POLYTRACK.OUTPUT         = './data/cvpr2021/V1/output_yolov4/'
+__PT.POLYTRACK.CONTINUOUS_VIDEO = True
+__PT.POLYTRACK.OUTPUT         = './data/video/output/'
 __PT.POLYTRACK.VIDEO_START_TIME = []
 
 #Displaying output video
