@@ -32,6 +32,9 @@ After declaring relevant parameters, navigate to the root folder of the reposito
 python PolyTrack.py 
 ```
 
+## Contact
+
+If there are any inquiries, please don't hesitate to contact me at Malika DOT Ratnayake AT monash DOT edu
  
 ## References
  
