@@ -1,0 +1,83 @@
+#! /usr/bin/env python
+# coding=utf-8
+from easydict import EasyDict as edict
+
+
+__PT                           = edict()
+# Consumers can get config by: from config import cfg
+
+pt_cfg                           = __PT
+
+# POLYTRACK options
+__PT.POLYTRACK                 = edict()
+
+__PT.POLYTRACK.INPUT          = './data/video/video_24_2.mp4'
+#__PT.POLYTRACK.INPUT_DIR      = '/home/mrat0006/bm75/polytrack/data/SR/' 
+__PT.POLYTRACK.INPUT_DIR      = './data/cvpr2021/V1/'
+__PT.POLYTRACK.VIDEO_EXT      = '.mp4'
+__PT.POLYTRACK.CONTINUOUS_VIDEO = False
+__PT.POLYTRACK.OUTPUT         = './data/cvpr2021/V1/output_yolov4/'
+__PT.POLYTRACK.VIDEO_START_TIME = []
+
+#Displaying output video
+__PT.POLYTRACK.SHOW_TRACK_FRAME      = False
+__PT.POLYTRACK.SHOW_VIDEO_OUTPUT     = True
+__PT.POLYTRACK.VIDEO_OUTPUT_WIDTH    = 1280
+__PT.POLYTRACK.VIDEO_OUTPUT_HEIGHT   = 720
+
+#Saving output video and graphs
+__PT.POLYTRACK.VIDEO_WRITER         = 'DIVX'
+__PT.POLYTRACK.SAVE_TRACK_FRAME     = False
+__PT.POLYTRACK.SAVE_VIDEO_OUTPUT    = True
+__PT.POLYTRACK.PLOT_GRAPH           = False
+__PT.POLYTRACK.SIGHTING_TIMES       = False
+
+#Video parameters
+__PT.POLYTRACK.FRAME_WIDTH = 1920
+__PT.POLYTRACK.FRAME_HEIGHT = 1080
+__PT.POLYTRACK.FPS = 30
+__PT.POLYTRACK.FRAME_COUNT= 300
+
+#Tracking related paremeters
+__PT.POLYTRACK.EDGE_PIXELS = 40
+__PT.POLYTRACK.MAX_OCCLUSIONS = 30 #Threshold number of undetected frames
+__PT.POLYTRACK.MAX_OCCLUSIONS_EDGE = 10
+__PT.POLYTRACK.INITIAL_FRAMES = 10 #Tracking will not shift to low resolution during this time
+__PT.POLYTRACK.MAX_DIST_BS = 80
+__PT.POLYTRACK.MAX_DIST_DL = 240
+
+
+__PT.POLYTRACK.INSECT_VERIFICATION = False
+__PT.POLYTRACK.INSECT_VERIFICATION_INTERVAL = 60
+__PT.POLYTRACK.INSECT_VERIFICATION_MIN_FRAMES = 30
+__PT.POLYTRACK.INSECT_VERIFICATION_LAST_FRAMES = 20 #Number of frames to measure distance
+__PT.POLYTRACK.INSECT_VERIFICATION_THRESHOLD_CUM_DISTANCE = 10 
+__PT.POLYTRACK.INSECT_VERIFICATION_MIN_BS = 0.05
+
+__PT.POLYTRACK.DL_DARK_SPOTS = False
+__PT.POLYTRACK.DL_DARK_SPOTS_RADIUS = 20
+__PT.POLYTRACK.RECORDED_DARK_SPOTS = []
+
+#Saving tracks and filtering
+__PT.POLYTRACK.FILTER_TRACKS = True
+__PT.POLYTRACK.FILTER_TRACKS_DIST_THRESHOLD = 10
+__PT.POLYTRACK.FILTER_TRACKS_VERIFY_FRAMES = 20
+
+
+#Foreground background detection related parameters
+__PT.POLYTRACK.MAX_BG_CHANGES = 20
+__PT.POLYTRACK.MIN_INSECT_AREA = 50
+__PT.POLYTRACK.MAX_INSECT_AREA = 3750
+
+
+# Low resolution mode related parameters
+__PT.POLYTRACK.LOWERES_FRAME_WIDTH = 852
+__PT.POLYTRACK.LOWERES_FRAME_HEIGHT = 480
+
+
+# Deep Leraning (YOLOv4) related parameters
+__PT.POLYTRACK.TRACKING_INSECTS = ['honeybee', 'flower']
+__PT.POLYTRACK.DL_SCORE_THRESHOLD = 0.5
+__PT.POLYTRACK.DL_IOU_THRESHOLD = 0.45
+__PT.POLYTRACK.MAX_TOTAL_SIZE = 50
+__PT.POLYTRACK.MAX_OUTPUT_SIZE_PER_CLASS = 50
