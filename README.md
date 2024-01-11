@@ -1,5 +1,8 @@
 # Polytrack_v1
 
+> ### This repository is archived
+>**This repository is no longer being updated. For the latest version of the software with ongoing support and frequent updates, please refer to the [Polytrack repository](https://github.com/malikaratnayake/Polytrack)**.
+
 ## Introduction
 This code is related to the paper "Towards Computer Vision and Deep Learning facilitated Pollination Monitoring for Agriculture" submitted to 2nd International Workshop and Prize Challenge on Agriculture-Vision: Challenges & Opportunities for Computer Vision in Agriculture (AgriVision).
  
